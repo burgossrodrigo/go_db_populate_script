@@ -20,7 +20,7 @@ func main() {
 	startTime := time.Now()
 
 	// Open the file for writing
-	file, err := os.Create(fileName)
+	file, err := os.Create("/output/tarefas.csv")
 	if err != nil {
 		fmt.Printf("Error creating file: %v\n", err)
 		return
